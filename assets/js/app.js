@@ -55,8 +55,6 @@ import topbar from "../vendor/topbar"
   modules.forEach(module => Object.assign(window, module));
 })();
 
-
-
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 let liveSocket = new LiveSocket("/live", Socket, {
   longPollFallbackMs: 2500,
